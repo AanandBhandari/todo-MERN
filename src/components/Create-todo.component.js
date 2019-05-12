@@ -46,7 +46,8 @@ export default class CreateTodo extends Component {
             todo_completed: false
         })
         axios.post('http://localhost:4000/todos/add',newTodo)
-        .then(res => console.log(res.data));
+        .then(res => console.log(res.data))
+        .catch(err => console.log(err));
     }
     render() {
         return (

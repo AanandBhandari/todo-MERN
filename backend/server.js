@@ -19,7 +19,6 @@ connection.once('open', function() {
 })
 
 todoRoutes.route('/').get(function(req, res) {
-    console.log('hello');
     Todo.find(function(err, todos) {
         if (err) {
             console.log(err);
