@@ -36,7 +36,6 @@ todoRoutes.route('/:id').get(function(req, res) {
 });
 
 todoRoutes.route('/add').post(function(req, res) {
-    console.log('helloworld');
     let todo = new Todo(req.body);
     todo.save()
         .then(todo => {
