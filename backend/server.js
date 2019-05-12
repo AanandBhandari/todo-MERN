@@ -19,7 +19,7 @@ connection.once('open', function() {
 })
 
 todoRoutes.route('/').get(function(req, res) {
-    console.log(1);
+    console.log('hello');
     Todo.find(function(err, todos) {
         if (err) {
             console.log(err);
@@ -37,6 +37,7 @@ todoRoutes.route('/:id').get(function(req, res) {
 });
 
 todoRoutes.route('/add').post(function(req, res) {
+    console.log('helloworld');
     let todo = new Todo(req.body);
     todo.save()
         .then(todo => {
