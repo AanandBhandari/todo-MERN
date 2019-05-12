@@ -12,7 +12,7 @@ function App() {
       <div className="container">
         
       <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-          <a className='navbar-brand' href="https://codingthesmartway.com" target="_blank">
+          <a className='navbar-brand' href="https://codingthesmartway.com" rel="noopener noreferrer" target="_blank">
             <img src={logo} width='30' heigth = '30' alt='Codingthesmartway'/>
           </a>
           <Link to='/' className='navbar-brand'>MERN Stack Todo App</Link>

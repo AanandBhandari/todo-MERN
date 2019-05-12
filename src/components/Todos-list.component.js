@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
 export default class TodosList extends Component {
-    render () {
+    render() {
         return (
             <div>
-                <p>Welcome to Todo List Component!</p>
+                <p>Welcome to Todo Component!</p>
             </div>
         )
     }
